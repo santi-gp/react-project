@@ -1,0 +1,25 @@
+.crudtable{
+    margin: 2% auto;
+    width: 80%;
+    text-align: center;
+    background-color: #90b9f7;
+}
+.crudtable th{
+    background-color: #5f56b4;
+    padding: 1% 0;
+    color: #fff;
+}
+.crudtable td{
+    padding: 1% 0;
+}
+.btnEdit{
+    background-color: #2b8a33;
+}
+.btnDelete{
+    background-color: #f33615;
+}
+.crudtable button{
+    padding: 2%;
+    margin: 0 1%;
+    border: none;
+}
