@@ -14,8 +14,11 @@ const accordionData = [
             </ul>
     },
     {
-        title: 'section2',
-        content: 'content2'
+        title: 'Ejemplos1',
+        content:
+            <ul>
+                <li><Link to="rating">Clasificación</Link></li>
+            </ul>
     },
     {
         title: 'section3',

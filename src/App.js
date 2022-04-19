@@ -4,7 +4,13 @@ import Layout from './Layout';
 import Inicio from './pages/Inicio'
 import Hooks from './pages/Hooks'
 import Clases from './pages/Clases'
-import { ReactForm, HookForm, ReactFormik } from './pages/hooksPages';
+import {
+  ReactForm,
+  HookForm,
+  ReactFormik,
+  Rating
+}
+  from './pages/hooksPages';
 import User from './components/content/User';
 import { Crud } from './components/content/crud/Crud';
 
@@ -23,6 +29,7 @@ function App() {
             <Route path='reactForm' element={<ReactForm />} />
             <Route path='reactFormik' element={<ReactFormik />} />
             <Route path='hookForm' element={<HookForm />} />
+            <Route path='rating' element={<Rating />} />
           </Route>
           <Route path='clases' element={<Clases />} >
             <Route path=":userId" element={<User />} />
