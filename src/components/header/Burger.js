@@ -1,14 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Burger() {
+    const [displayNav, setDisplayNav] = useState(false);
+    const toggleNav = () => {setDisplayNav(!displayNav)};
     return (
         <>
-            <input type="checkbox" name="group" id="burger" />
-            <label htmlFor="burger" className="mburger">
+            <button onClick={toggleNav} className="mburger">
                 <div></div>
                 <div></div>
                 <div></div>
-            </label>
+            </button>
         </>
     )
 }
