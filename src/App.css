@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-body {
-  margin: 0;
-}
-
 .App {
   box-sizing: border-box;
   display: flex;
@@ -17,8 +13,7 @@ body {
   min-height: 100vh;
 }
 
-li {
-  flex: 1;
+li{
   list-style-type: none;
 }
 
@@ -70,7 +65,7 @@ footer p {
 header {
   padding: 2% 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -82,11 +77,11 @@ header .logo {
 
 header nav {
   flex: 3;
+  margin-right: 2%;
 }
 
 nav ul {
   display: flex;
-  flex: 1;
   justify-content: space-between;
   align-items: center;
   list-style: none;
