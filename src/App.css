@@ -8,12 +8,11 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 95%;
-  max-width: 1400px;
+  width: 100%;
   min-height: 100vh;
 }
 
-li{
+li {
   list-style-type: none;
 }
 
@@ -24,18 +23,53 @@ a {
 
 header,
 footer {
-  flex-shrink: 0;
+  flex: 0 0 auto;
   background-color: #1d213a;
+}
+
+.header_main {
+  margin: 0 5%;
+  padding: 2% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  flex: 1;
+  color: #00c7f1;
+}
+
+header nav {
+  flex: 3;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
 header a {
   color: #fff;
 }
 
+.mburger {
+  display: none;
+}
+
 main {
   display: flex;
+  flex-direction: column;
   flex: 1 1 auto;
   background-color: #c0d7e4;
+}
+
+.main_content {
+  display: flex;
+  flex: 1 1 auto;
+  margin: 0 5%;
 }
 
 section {
@@ -44,7 +78,7 @@ section {
 }
 
 article {
-  margin: 2%;
+  margin: 2% 0;
 }
 
 aside {
@@ -62,37 +96,8 @@ footer p {
   color: #fff;
 }
 
-header {
-  padding: 2% 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .logo {
-  flex: 1;
-  color: #00c7f1;
-  margin-left: 2%;
-}
-
-header nav {
-  flex: 3;
-  margin-right: 2%;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
-
 button {
   border: none;
-}
-
-.mburger {
-  display: none;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -106,9 +111,20 @@ button {
     width: 100%;
   }
 
-  main {
-    display: flex;
-    flex-direction: column;
+  .header_main {
+    margin: 0 2%;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 66.67%;
+    transition: all 0.5s ease;
+  }
+
+  nav.open {
+    left: 0;
   }
 
   ul {
@@ -123,7 +139,6 @@ button {
 
   .mburger {
     display: block;
-    margin-right: 2%;
   }
 
   .mburger:hover {
@@ -139,27 +154,22 @@ button {
     transition: all 0.5s ease;
   }
 
-  nav {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 66.67%;
-    transition: all 0.5s ease;
-  }
-  nav.open{
-    left: 0;
-  }
-
   .mburger-1 {
     transform: translate(0, 10px) rotate(45deg);
   }
 
-  .mburger-2{
+  .mburger-2 {
     opacity: 0;
   }
 
-  .mburger-3{
+  .mburger-3 {
     transform: translate(0, -10px) rotate(-45deg);
+  }
+
+  .main_content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2%;
   }
 
 }

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './Accordion.css'
 
-const accordionData = 
-  {
-    title: 'section1',
-    content: 'content1'
-  }
-  
+const accordionData =
+{
+  title: 'section1',
+  content: 'content1'
+}
+
 const { title, content } = accordionData;
 function Accordion() {
   const [active, setActive] = useState(false);

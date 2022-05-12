@@ -6,11 +6,13 @@ import Header from './components/header/Header';
 function Layout() {
   return (
     <div className="App">
-      <Header/>
+      <Header />
       <main>
-          <Outlet/>
+        <div className='main_content'>
+          <Outlet />
+        </div>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
