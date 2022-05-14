@@ -9,6 +9,7 @@
     width:fit-content;
     padding: 1% 2%;
     background-color: #4137a8;
+    border-radius: 2.5px;
     color: #fff;
 }
 .crudform input{

@@ -12,14 +12,16 @@
     display: flex;
     width:fit-content;
     padding: 1% 2%;
-    background-color: #0caf1a;
+    background-color: #28a745;
+    border-radius: 2.5px;
     color: #000;
 }
 .crudform div .submit:last-child{
     display: flex;
     width:fit-content;
     padding: 1% 2%;
-    background-color: #85270b;
+    background-color: #dc3545;
+    border-radius: 2.5px;
     color: #fff;
 }
 .crudform input{

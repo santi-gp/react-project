@@ -9,7 +9,7 @@ function Header() {
     return (
         <header className='bgc-1 py-1'>
             <div className='margin-wrap flex-row ai-center jc-between'>
-                <h1 className="f-grow1 color-1">Logo</h1>
+                <h1 className="f-grow1 color-3">Logo</h1>
                 <div onClick={toggleNav} className="mburger">
                     {!displayNav ? (
                         <>

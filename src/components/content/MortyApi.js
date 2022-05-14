@@ -27,12 +27,12 @@ function MortyApi() {
   }
   return (
     <>
-      <h3>Rick and Morty</h3>
+      <h3 className='txt-center pb-2 color-1'>Rick and Morty</h3>
       <ul style={styleMorty}>
         {mortys.map((morty) => (
           <li key={morty.id} style={styleMorty.styleLi}>
             <img style={{ width: '60%' }} src={morty.image} alt={morty.name} />
-            <p>{morty.name}</p>
+            <p className='my-2 color-1'>{morty.name}</p>
           </li>
         ))}
       </ul>

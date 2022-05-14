@@ -39,7 +39,7 @@ function CrudForm(props) {
             <button className={styles.submit}
                 type='submit'
                 onClick={handleSubmit}>
-                Añadir Usuario</button>
+                Añadir</button>
         </form>
     );
 }

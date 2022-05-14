@@ -41,7 +41,7 @@ function SearchText() {
 };
 
 const Search = props => (
-    <div>
+    <div className='mt-1'>
         <label htmlFor="search">Buscar: </label>
         <input id="search" type="text" onChange={props.onSearch} />
     </div>
@@ -50,15 +50,15 @@ const Search = props => (
 const List = props =>
     props.list.map(item => (
         <div key={item.objectID}>
-            <div>
-                <span>Título: </span><a href={item.url}>{item.title}</a>
+            <div className='flex-row mt-1'>
+                <span>Título: &nbsp;</span>
+                <a className='color-2' href={item.url}>{item.title}</a>
             </div>
             <div><span>Director: </span>{item.author}</div>
             <div><span>Año: </span>{item.year}</div>
-            <div><span>Recaudación: </span>{item.points} &#36;</div>
+            <div className='mb-1'><span>Recaudación: </span>{item.points} &#36;</div>
             <hr />
         </div>
-        
     ));
 
 export default SearchText;

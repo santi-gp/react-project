@@ -12,12 +12,16 @@ function User() {
     }
     return (
         <>
-            <h4>{user.title}</h4>
-            <h5>{user.director}</h5>
-            <p>{user.actors}</p>
-            <button onClick={handleDelete} >Borrar</button>
+            <h4 className='my-1'>{user.title}</h4>
+            <h5 className='my-1'>{user.director}</h5>
+            <p className='my-1'>{user.actors}</p>
+            <button
+                onClick={handleDelete}
+                className='bgc-red color-white border-r5 my-1'>
+                Borrar
+            </button>
         </>
-        
+
     )
 }
 

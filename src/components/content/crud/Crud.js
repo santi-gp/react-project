@@ -41,7 +41,7 @@ export const Crud = () => {
       <h2>Crud React Hooks</h2>
       {editing ? (
         <div>
-          <h3>Editar Usuario</h3>
+          <h3 className='txt-center'>Editar Usuario</h3>
           <UpdateForm
             currentUser={currentUser}
             setEditing={setEditing}
@@ -50,7 +50,7 @@ export const Crud = () => {
         </div>
       ) :
         <div>
-          <h3>Añadir Usuario</h3>
+          <h3 className='txt-center my-1'>Añadir Usuario</h3>
           <CrudForm
             addUser={addUser}
           />

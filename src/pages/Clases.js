@@ -15,7 +15,7 @@ function Clases() {
       marginTop: '2%'
     },
     styleA: {
-      color: '#1d213a'
+      color: '#2588a7'
     }
   };
   return (
@@ -33,8 +33,8 @@ function Clases() {
               ))}
             </ul>
           </div>
-          <div>
-            <h3>Información película</h3>
+          <div className='px-2'>
+            <h3>Información de la película</h3>
             <Outlet />
           </div>
         </article>
