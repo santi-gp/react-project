@@ -7,8 +7,8 @@ function Layout() {
   return (
     <div className="App">
       <Header />
-      <main>
-        <div className='main_content'>
+      <main className='flex-column'>
+        <div className='main_small margin-wrap flex-row f-grow1'>
           <Outlet />
         </div>
       </main>

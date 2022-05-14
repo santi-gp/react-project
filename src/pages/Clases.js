@@ -5,7 +5,6 @@ import Counter from '../components/content/Counter'
 import Toggle from '../components/content/Toggle'
 import Factorial from '../components/content/Factorial'
 import Fibonacci from '../components/content/Fibonacci'
-import AccordionMenu from '../components/content/AccordionMenu';
 
 function Clases() {
   const users = getAllUsers();
@@ -35,7 +34,7 @@ function Clases() {
             </ul>
           </div>
           <div>
-            <h3>Añadir película</h3>
+            <h3>Información película</h3>
             <Outlet />
           </div>
         </article>
@@ -45,16 +44,13 @@ function Clases() {
           <Counter />
         </div>
         <div>
-          <Toggle />
+          <Fibonacci />
         </div>
         <div>
           <Factorial />
         </div>
         <div>
-          <Fibonacci />
-        </div>
-        <div>
-          <AccordionMenu />
+          <Toggle />
         </div>
       </aside>
     </>

@@ -33,24 +33,3 @@
     padding: 2% 0;
 }
 
-.accordion_item {
-    margin: 0 auto;
-    width: 90%;
-}
-
-.accordion_item.active {
-    margin: 0 auto;
-    width: 90%;
-    background-color: #8fd9e1;
-}
-
-.content_wrapper {
-    height: 0;
-    overflow: hidden;
-    transition: all 0.5s ease;
-}
-
-.content_wrapper.open {
-    padding: 1em 0;
-    height: auto;
-}

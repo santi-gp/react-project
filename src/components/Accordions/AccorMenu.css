@@ -1,0 +1,38 @@
+.accorMenu_wrapper{
+    margin: 2rem auto;
+}
+.accorMenu {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.accorMenu.active {
+    margin: 0 auto;
+    max-width: 90%;
+    background-color: #8fd9e1;
+}
+
+.accorMenu_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #21aeca;
+    padding: 1rem;
+}
+
+.accorMenu_content {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.accorMenu_content.open {
+    padding: 1em 0;
+    height: auto;
+}
+
+.accorMenu a {
+    color: #1d213a;
+    padding: 2% 0;
+}

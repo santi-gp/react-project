@@ -7,9 +7,16 @@ function Toggle() {
     const toggleImage = () => setDisplayImage(!displayImage);
     return (
         <>
-            <button onClick={toggleImage}>Imagen</button>
-            <br />
-            {displayImage && <img src={url} style={{ width: 300 }} alt='Star Wars' />}
+            <button
+                className='bgc-1 color-white border-r5'
+                onClick={toggleImage}>
+                Imagen
+            </button>
+            <div className='py-1'>
+                {displayImage &&
+                    <img src={url} style={{ width: 300 }} alt='Star Wars' />}
+            </div>
+
         </>
     )
 }

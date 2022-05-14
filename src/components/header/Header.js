@@ -1,17 +1,15 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import '/home/fabio/Documentos/React/react-project/src/App.css';
+import '../../App.css';
 //import Burger from './Burger'
 function Header() {
     const [displayNav, setDisplayNav] = useState(false);
     const toggleNav = () => { setDisplayNav(!displayNav) };
     const closeNav = () => setDisplayNav(false);
     return (
-        <header>
-            <div className='header_main'>
-                <div className="logo">
-                    <h2>Logo</h2>
-                </div>
+        <header className='bgc-1 py-1'>
+            <div className='margin-wrap flex-row ai-center jc-between'>
+                <h1 className="f-grow1 color-1">Logo</h1>
                 <div onClick={toggleNav} className="mburger">
                     {!displayNav ? (
                         <>
@@ -29,7 +27,7 @@ function Header() {
                     }
                 </div>
                 <nav className={displayNav ? "open" : "nav"}>
-                    <ul>
+                    <ul className='flex-row jc-between ai-center'>
                         <li>
                             <NavLink
                                 onClick={closeNav}

@@ -17,12 +17,13 @@ const Factorial = () => {
     }
     return (
         <>
-            Factorial de
+            Factorial de 
             <input 
+            style={{width: '4em', margin:'0 0.5em', paddingLeft:'0.5em'}}
                 type='number'
                 value={n}
                 onChange={handleChange} />
-            is {factorial}
+            es: {factorial}
         </>
     )
 }

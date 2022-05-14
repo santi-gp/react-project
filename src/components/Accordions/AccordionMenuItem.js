@@ -1,16 +1,16 @@
 import React from 'react'
-import './Accordion.css';
+import './AccorMenu.css'
 
 function AccordionItem({ item, onToggle, active }) {
   const { header, content } = item;
   return (
     <>
-      <div className={`accordion_item ${active ? "active" : ""}`}>
-        <div className='accordion-title' onClick={onToggle}>
+      <div className={`accorMenu ${active ? "active" : ""}`}>
+        <div className='accorMenu_title' onClick={onToggle}>
           <div>{header}</div>
           <div>{active ? '-' : '+'}</div>
         </div>
-        <div className={`content_wrapper ${active ? "open" : ""}`}>
+        <div className={`accorMenu_content ${active ? "open" : ""}`}>
           {content}
         </div>
       </div>
