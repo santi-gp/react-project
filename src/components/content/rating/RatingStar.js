@@ -4,7 +4,9 @@ import { IoIosStar, IoIosStarOutline } from 'react-icons/io'
 function RatingStar(props) {
     const [rating, setRating] = useState(props.rating);
     const styleStar = {
-        color: 'orange'
+        color: 'orange',
+        display: 'flex',
+        alignItems: 'center'        
     }
     return (
         <div style={styleStar}>
@@ -18,7 +20,7 @@ function RatingStar(props) {
                 (<IoIosStarOutline onClick={() => setRating(4)} />)}
             {rating >= 5 ? (<IoIosStar onClick={() => setRating(5)} />) :
                 (<IoIosStarOutline onClick={() => setRating(5)} />)}
-            {props.numOfReviews}
+            <span className='ml-1'>{props.numOfReviews}</span>
         </div>
     )
 }

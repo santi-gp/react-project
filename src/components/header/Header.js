@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import '../../App.css';
+//import '../../App.css';
 //import Burger from './Burger'
 function Header() {
     const [displayNav, setDisplayNav] = useState(false);

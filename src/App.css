@@ -3,10 +3,6 @@
 	padding: 0;
 }
 
-.margin-wrap {
-	margin: 0 5%;
-}
-
 li {
 	list-style: none;
 }
@@ -20,18 +16,19 @@ p {
 	text-align: justify;
 }
 
-.grid-3 {
+.grid-3, grid-4 {
 	display: grid;
 	grid-template-columns: 0.5fr 1fr 1.5fr;
 	justify-content: center;
 	align-items: center;
 }
 
+.grid-3 {
+	grid-template-columns: 0.5fr 1fr 1.5fr;
+}
+
 .grid-4 {
-	display: grid;
 	grid-template-columns: 0.5fr 1fr 1.5fr 0.5fr;
-	justify-content: center;
-	align-items: center;
 }
 
 .grid-3>div,
@@ -373,10 +370,7 @@ ai-strech {
 	line-height: 2;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-}
+/* Styles layouy*/
 
 .App {
 	box-sizing: border-box;
@@ -385,6 +379,10 @@ ai-strech {
 	margin: 0 auto;
 	width: 100%;
 	min-height: 100vh;
+}
+
+.margin-wrap {
+	margin: 0 5%;
 }
 
 header,
@@ -438,10 +436,20 @@ button {
 		width: 100%;
 	}
 
+	.margin-wrap {
+		margin: 0 2%;
+	}
+	
 	header,
 	section,
 	aside {
 		width: 100%;
+	}
+
+	.main_small {
+		display: flex;
+		flex-direction: column;
+		margin: 0 2%;
 	}
 
 	nav {
@@ -495,13 +503,4 @@ button {
 		transform: translate(0, -10px) rotate(-45deg);
 	}
 
-	.margin-wrap {
-		margin: 0 2%;
-	}
-
-	.main_small {
-		display: flex;
-		flex-direction: column;
-		margin: 0 2%;
-	}
 }

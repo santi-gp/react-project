@@ -10,6 +10,9 @@ function User() {
         deleteUser(user.id);
         navigate("/clases")
     }
+    if (!user) {
+        return <div>No existe película</div>;
+    }
     return (
         <>
             <h4 className='my-1'>{user.title}</h4>
@@ -26,3 +29,14 @@ function User() {
 }
 
 export default User
+
+/**
+ * <h4 className='my-1'>{user.title}</h4>
+            <h5 className='my-1'>{user.director}</h5>
+            <p className='my-1'>{user.actors}</p>
+            <button
+                onClick={handleDelete}
+                className='bgc-red color-white border-r5 my-1'>
+                Borrar
+            </button>
+ */

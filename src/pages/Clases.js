@@ -27,14 +27,17 @@ function Clases() {
             <ul>
               {users.map((user) => (
                 <li key={user.id} style={styleGrid.styleLi}>
-                  {/*<Link to={"/" + id} >{user.title}</Link>*/}
-                  <Link to={user.id.toString()} style={styleGrid.styleA}>{user.title}</Link>
+                  <Link
+                    to={user.id.toString()}
+                    style={styleGrid.styleA}>
+                    {user.title}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
           <div className='px-2'>
-            <h3>Información de la película</h3>
+            <h3>Seleccionar película</h3>
             <Outlet />
           </div>
         </article>
