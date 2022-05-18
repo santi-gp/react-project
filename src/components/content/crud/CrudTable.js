@@ -6,7 +6,7 @@ import { FaTrash } from "react-icons/fa";
 const CrudTable = (props) => {
   return (
     <div className={styles.crudtable}>
-      <div className='grid-4 bgc-2 font-bold'>
+      <div className='grid-4 bgc-4 font-bold'>
         <div>ID</div>
         <div>Nombre</div>
         <div>Usuario</div>

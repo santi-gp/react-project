@@ -28,12 +28,14 @@ function CrudForm(props) {
             <input
                 type='text'
                 name='name'
+                placeholder='Nombre'
                 value={user.name}
                 onChange={inputChanged} />
             <label>Usuario</label>
             <input
                 type='text'
                 name='username'
+                placeholder='Usuario'
                 value={user.username}
                 onChange={inputChanged} />
             <button className={styles.submit}

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 
-
 function MortyApi() {
   const [mortys, setMortys] = useState([]);
   const getMortys = async () => {
@@ -27,7 +26,7 @@ function MortyApi() {
   }
   return (
     <>
-      <h3 className='txt-center pb-2 color-1'>Rick and Morty</h3>
+      <h3 className='txt-center mb-2 color-1'>Rick and Morty</h3>
       <ul style={styleMorty}>
         {mortys.map((morty) => (
           <li key={morty.id} style={styleMorty.styleLi}>
