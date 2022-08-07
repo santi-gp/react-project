@@ -1,0 +1,29 @@
+.crudform{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+}
+.crudform div{
+    display: flex;
+    justify-content: space-around;
+}
+.crudform div .submit:nth-child(1){
+    display: flex;
+    width:fit-content;
+    padding: 1% 2%;
+    background-color: #28a745;
+    border-radius: 2.5px;
+    color: #000;
+}
+.crudform div .submit:last-child{
+    display: flex;
+    width:fit-content;
+    padding: 1% 2%;
+    background-color: #dc3545;
+    border-radius: 2.5px;
+    color: #fff;
+}
+.crudform input{
+    margin-bottom: 2%;
+}

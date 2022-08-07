@@ -1,0 +1,11 @@
+.crudtable{
+    margin: 2% auto;
+    width: 80%;
+    text-align: center;
+    background-color: #d1d1d1;
+    border-radius: 2px;
+}
+.crudtable>div:nth-child(2n) {
+	background-color: #f1f1f1;
+}
+

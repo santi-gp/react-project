@@ -1,0 +1,24 @@
+.myformik{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+}
+.myformik .submit{
+    display: flex;
+    width:fit-content;
+    margin-top: 2%;
+    padding: 1% 2%;
+    background-color: #4137a8;
+    border: none;
+    border-radius: 2.5px;
+    color: #fff;
+}
+.myformik .messageError{
+    color: #cf0d0d;
+    font-weight: 300;
+    font-size: 0.75em;
+}
+.myformik input{
+    margin-bottom: 2%;
+}

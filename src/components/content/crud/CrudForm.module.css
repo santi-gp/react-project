@@ -1,0 +1,17 @@
+.crudform{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+}
+.crudform .submit{
+    display: flex;
+    width:fit-content;
+    padding: 1% 2%;
+    background-color: #4137a8;
+    border-radius: 2.5px;
+    color: #fff;
+}
+.crudform input{
+    margin-bottom: 2%;
+}

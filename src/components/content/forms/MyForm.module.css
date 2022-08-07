@@ -1,0 +1,19 @@
+.myforms{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+}
+.myforms .submit{
+    display: flex;
+    width:fit-content;
+    margin-top: 2%;
+    padding: 1% 2%;
+    background-color: #4137a8;
+    border: none;
+    border-radius: 2.5px;
+    color: #fff;
+}
+.myforms input{
+    margin-bottom: 2%;
+}
