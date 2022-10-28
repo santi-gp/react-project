@@ -155,22 +155,6 @@ let users = [
         "titulo": "The Matrix"
     },
     {
-        "anio": 2008,
-        "comentarios": [],
-        "director": "Christopher Nolan",
-        "genero": [
-            "Aventura",
-            "Acción",
-            "Super Heroes",
-            "Suspenso"
-        ],
-        "id": "ab034fc3-ea8e-4aab-9d3d-b117ca78c442",
-        "idUsuario": "c8c6cfd1-318c-4984-b38c-031ad76e3596",
-        "imagen": "https://static.wikia.nocookie.net/doblaje/images/9/9c/Batman_el_Caballero_de_la_Noche.png/revision/latest?cb=20110602012240&path-prefix=es",
-        "sinopsis": "Con la ayuda del teniente Jim Gordon y del Fiscal del Distrito Harvey Dent, Batman mantiene a raya el crimen organizado en Gotham. Todo cambia cuando aparece el Joker, un nuevo criminal que desencadena el caos y tiene aterrados a los ciudadanos.",
-        "titulo": "Batman: Dark Night"
-    },
-    {
         "anio": 1977,
         "comentarios": [],
         "director": "George Lucas",
@@ -233,21 +217,6 @@ let users = [
         "imagen": "https://m.media-amazon.com/images/I/71GALO65MqL._SL1448_.jpg",
         "sinopsis": "En la Tierra Media, el Señor Oscuro Sauron forjó los Grandes Anillos del Poder y creó uno con el poder de esclavizar a toda la Tierra Media. Frodo Bolsón es un hobbit al que su tío Bilbo hace portador del poderoso Anillo Único con la misión de destruirlo.",
         "titulo": "El Señor de los Anillos"
-    },
-    {
-        "anio": 1998,
-        "comentarios": [],
-        "director": "James Cameron",
-        "genero": [
-            "Drama",
-            "Romance",
-            "Tragedia"
-        ],
-        "id": "qq034fc3-ea8e-4aab-9d3d-b117ca78c442",
-        "idUsuario": "c8c6cfd1-318c-4984-b38c-031ad76e3596",
-        "imagen": "https://www.tebeosfera.com/T3content/img/T3_numeros/0/1/num1_BbXC-001.jpg",
-        "sinopsis": "Jack es un joven artista que gana un pasaje para viajar a América en el Titanic, el transatlántico más grande y seguro jamás construido.",
-        "titulo": "Titanic"
     },
     {
         "anio": 2010,
