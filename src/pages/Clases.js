@@ -30,7 +30,7 @@ function Clases() {
                   <Link
                     to={user.id.toString()}
                     style={styleGrid.styleA}>
-                    {user.title}
+                    {user.titulo}
                   </Link>
                 </li>
               ))}

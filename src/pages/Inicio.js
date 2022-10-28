@@ -1,5 +1,6 @@
 import React from 'react'
-import MortyApi from '../components/content/MortyApi'
+import ApiRest from '../components/content/ApiRest'
+//import MortyApi from '../components/content/MortyApi'
 //import List from '../components/content/List'
 import SearchText from '../components/content/SearchText'
 //import Lightbulb from '../components/content/Lightbulb'
@@ -16,7 +17,8 @@ function Inicio() {
       </article>
       <article>
         {/*<Lightbulb/>*/}
-        <MortyApi />
+        {/*<MortyApi />*/}
+        <ApiRest/>
       </article>
     </div>
 
