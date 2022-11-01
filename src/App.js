@@ -8,7 +8,8 @@ import {
   ReactForm,
   HookForm,
   ReactFormik,
-  Rating
+  Rating,
+  GitHubUsers
 }
   from './pages/hooksPages';
 import User from './components/content/User';
@@ -30,6 +31,7 @@ function App() {
             <Route path='reactFormik' element={<ReactFormik />} />
             <Route path='hookForm' element={<HookForm />} />
             <Route path='rating' element={<Rating />} />
+            <Route path='githubUsers' element={<GitHubUsers />} />
           </Route>
           <Route path='clases' element={<Clases />} >
             <Route path=":userId" element={<User />} />

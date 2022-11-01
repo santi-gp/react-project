@@ -21,8 +21,11 @@ const dataMenu = [
             </ul>
     },
     {
-        header: 'Link3',
-        content: 'This is Lin3'
+        header: 'Rest Ful',
+        content: 
+            <ul>
+                <li><Link to="githubUsers">Obtener Datos</Link></li>
+            </ul>
     }
 ]
 function AccordionMenu() {

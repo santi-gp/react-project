@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import AccordionMenu from '../components/Accordions/AccordionMenu'
+import AccordionMenu from '../components/accordions/AccordionMenu'
 
 function Hooks() {
   return (

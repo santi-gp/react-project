@@ -3,6 +3,7 @@ import MyForm from '../components/content/forms/MyForm'
 import MyFormik from '../components/content/forms/MyFormik'
 import Form from '../components/content/forms/Form'
 import Product from '../components/content/rating/Product'
+import GitUsers from '../components/content/restFulApi/GitUsers'
 
 // Acordeon Forularios
 export function ReactForm() {
@@ -36,6 +37,14 @@ export function Rating() {
     </article>
   )
 }
+export function GitHubUsers() {
+  return (
+    <article>
+      <GitUsers/>
+    </article>
+  )
+}
+
 
 /*
 <RatingStar rating="1" />
