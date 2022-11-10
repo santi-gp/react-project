@@ -4,6 +4,7 @@ import MyFormik from '../components/content/forms/MyFormik'
 import Form from '../components/content/forms/Form'
 import Product from '../components/content/rating/Product'
 import GitUsers from '../components/content/restFulApi/GitUsers'
+import ChangeColour from '../components/content/hook_useEffect/ChangeColour'
 
 // Acordeon Forularios
 export function ReactForm() {
@@ -29,6 +30,16 @@ export function HookForm() {
     </article>
   )
 }
+
+//Acordeon API RESTful
+export function GitHubUsers() {
+  return (
+    <article>
+      <GitUsers/>
+    </article>
+  )
+}
+
 //Acordeon Clasificación
 export function Rating() {
   return (
@@ -37,10 +48,10 @@ export function Rating() {
     </article>
   )
 }
-export function GitHubUsers() {
+export function ShowColor() {
   return (
     <article>
-      <GitUsers/>
+      <ChangeColour />
     </article>
   )
 }

@@ -14,19 +14,21 @@ const dataMenu = [
             </ul>
     },
     {
-        header: 'Ejemplo1',
-        content:
-            <ul>
-                <li><Link to="rating">Clasificación</Link></li>
-            </ul>
-    },
-    {
-        header: 'Rest Ful',
+        header: 'API RESTful',
         content: 
             <ul>
                 <li><Link to="githubUsers">Obtener Datos</Link></li>
             </ul>
-    }
+    },
+    {
+        header: 'Ejemplos',
+        content:
+            <ul>
+                <li><Link to="rating">Clasificación</Link></li>
+                <li><Link to="changeColour">Cambiar color</Link></li>
+            </ul>
+    },
+    
 ]
 function AccordionMenu() {
     const [click, setClick] = useState('0');
