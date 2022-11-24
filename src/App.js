@@ -15,8 +15,10 @@ import {
   from './pages/hooksPages';
 import User from './components/content/User';
 import { Crud } from './components/content/crud/Crud';
+import PostMain from './components/content/posts/PostMain';
 
 function App() {
+  
   return (
     <>
       <Routes>
@@ -26,6 +28,7 @@ function App() {
             <Route index element={
               <article>
                 <Crud />
+                <PostMain />
               </article>
             } />
             <Route path='reactForm' element={<ReactForm />} />

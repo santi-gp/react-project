@@ -16,6 +16,13 @@ p {
   text-align: justify;
 }
 
+.width50{
+  width: 50%;
+}
+.width70{
+  width: 70%;
+}
+
 .grid-3,
 .grid-4 {
   display: grid;
@@ -289,7 +296,9 @@ ai-strech {
 .mr-2 {
   margin-right: 2%;
 }
-
+.m-2-auto{
+  margin: 2% auto;
+}
 /* Paddings */
 .p-0 {
   padding: 0;

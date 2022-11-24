@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom';
 import { getAllUsers } from '../components/content/users'
-import Counter from '../components/content/Counter'
+import Counter from '../components/content/Math/Counter'
 import Toggle from '../components/content/Toggle'
-import Factorial from '../components/content/Factorial'
-import Fibonacci from '../components/content/Fibonacci'
+import Factorial from '../components/content/Math/Factorial'
+import Fibonacci from '../components/content/Math/Fibonacci'
+import SolveQuadraticEqn from '../components/content/Math/SolveQuadraticEqn';
 
 function Clases() {
   const users = getAllUsers();
@@ -47,13 +48,16 @@ function Clases() {
           <Counter />
         </div>
         <div>
-          <Fibonacci />
-        </div>
-        <div>
           <Factorial />
         </div>
         <div>
+          <Fibonacci />
+        </div>
+        <div>
           <Toggle />
+        </div>
+        <div>
+          <SolveQuadraticEqn />
         </div>
       </aside>
     </>
