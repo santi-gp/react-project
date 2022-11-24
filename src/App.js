@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Layout from './Layout';
-import Inicio from './pages/Inicio'
+import Home from './pages/Home'
 import Hooks from './pages/Hooks'
-import Clases from './pages/Clases'
+import Examples from './pages/Examples'
 import {
   ReactForm,
   HookForm,
@@ -23,7 +23,7 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route index element={<Inicio />} />
+          <Route index element={<Home />} />
           <Route path='hooks' element={<Hooks />} >
             <Route index element={
               <article>
@@ -38,7 +38,7 @@ function App() {
             <Route path='rating' element={<Rating />} />
             <Route path='changeColour' element={<ShowColor />} />
           </Route>
-          <Route path='clases' element={<Clases />} >
+          <Route path='clases' element={<Examples />} >
             <Route path=":userId" element={<User />} />
           </Route>
         </Route>

@@ -18,7 +18,7 @@ function User() {
         <>
             <h4 className='my-1'>{user.titulo}</h4>
             <h5 className='my-1'>{user.director}</h5>
-            <img style={{ width: '30%'}} src={user.imagen} alt={user.titulo} />
+            <img style={{ width: '30%' }} src={user.imagen} alt={user.titulo} />
             <p className='my-1'>{user.sinopsis}</p>
             <button
                 onClick={handleDelete}
@@ -32,13 +32,3 @@ function User() {
 
 export default User
 
-/**
- * <h4 className='my-1'>{user.title}</h4>
-            <h5 className='my-1'>{user.director}</h5>
-            <p className='my-1'>{user.actors}</p>
-            <button
-                onClick={handleDelete}
-                className='bgc-red color-white border-r5 my-1'>
-                Borrar
-            </button>
- */

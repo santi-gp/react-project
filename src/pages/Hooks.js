@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import AccordionMenu from '../components/accordions/AccordionMenu'
+import AccordionMenu from '../components/sidebars/AccordionMenu'
 import InterpolationLagrange from '../components/content/Math/InterpolationLagrange'
 
 function Hooks() {
