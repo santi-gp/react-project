@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import AccordionItem from './AccordionMenuItem'
-import dataMenu from './sidebarHooks';
+//import dataMenu from './sidebarHooks';
+//import {getAllLinks} from './sidebarHooks';
 import './AccorMenu.css';
 
-function AccordionMenu() {
+function AccordionMenu( {dataArray} ) {
     //const dataMenu = getAllLinks();
     const [click, setClick] = useState('0');
     const handleToggle = (index) => {
@@ -15,7 +16,7 @@ function AccordionMenu() {
     return (
         <>
             <div className='accorMenu_wrapper'>
-                {dataMenu.map((item, index) =>
+                {dataArray.map((item, index) =>
                 (
                     <AccordionItem
                         key={index}

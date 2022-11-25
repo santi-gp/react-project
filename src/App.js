@@ -13,12 +13,14 @@ import {
   ShowColor
 }
   from './pages/hooksPages';
-import User from './components/content/User';
+import User from './components/content/movies/User';
 import { Crud } from './components/content/crud/Crud';
+import Movies from './components/content/movies/Movies';
 import PostMain from './components/content/posts/PostMain';
+import { Calculators, Numerical } from './pages/examplesPages';
 
 function App() {
-  
+
   return (
     <>
       <Routes>
@@ -38,7 +40,14 @@ function App() {
             <Route path='rating' element={<Rating />} />
             <Route path='changeColour' element={<ShowColor />} />
           </Route>
-          <Route path='clases' element={<Examples />} >
+          <Route path='examples' element={<Examples />} >
+            <Route index element={
+              <article>
+                <Movies />
+              </article>
+            } />
+            <Route path='calculators' element={<Calculators />} />
+            <Route path='interLagrange' element={<Numerical />} />
             <Route path=":userId" element={<User />} />
           </Route>
         </Route>

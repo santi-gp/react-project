@@ -6,8 +6,8 @@ export default function SolveQuadraticEqn() {
     const [number_a, setNumber_a] = useState();
     const [number_b, setNumber_b] = useState();
     const [number_c, setNumber_c] = useState();
-    const [sum1, setsum1] = useState();
-    const [sum2, setsum2] = useState()
+    const [sum1, setsum1] = useState('');
+    const [sum2, setsum2] = useState('')
 
     const handleClick = (e) => {
         let a = parseFloat(number_a);
@@ -28,13 +28,12 @@ export default function SolveQuadraticEqn() {
             alert('|No existe solución en los Reales!');
             e.preventDefault();
         }
-
     };
 
     return (
         <>
-            <h4>Ecuación Cuadrática</h4>
-            <h5>ax<sup>2</sup>+bx+c, a &ne; 0</h5>
+            <h4 className='txt-center'>Ecuación Cuadrática</h4>
+            <h5 className='txt-center'>ax<sup>2</sup>+bx+c, a &ne; 0</h5>
             <form className={styles.forms}>
                 <label>
                     Ingresar <var>a</var>
@@ -59,8 +58,8 @@ export default function SolveQuadraticEqn() {
                     value={number_c || ''} placeholder='1' />
                 <button className={styles.submit} onClick={handleClick}>Resolver</button>
             </form>
-            <p>x<sub>1</sub>= {sum1}</p>
-            <p>x<sub>2</sub>= {sum2}</p>
+            <p className='txt-center'>x<sub>1</sub>= {sum1}</p>
+            <p className='txt-center'>x<sub>2</sub>= {sum2}</p>
         </>
     )
 }

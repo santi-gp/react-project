@@ -9,7 +9,7 @@ function User() {
     //const user = getUser(parseInt(params.userId));
     const handleDelete = () => {
         deleteUser(user.id);
-        navigate("/clases")
+        navigate("/examples")
     }
     if (!user) {
         return <div>No existe película</div>;

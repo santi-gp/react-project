@@ -48,7 +48,7 @@ function Header() {
                         <li>
                             <NavLink
                                 onClick={closeNav}
-                                to="clases" style={({ isActive }) => ({ color: isActive ? 'cyan' : 'white' })}
+                                to="examples" style={({ isActive }) => ({ color: isActive ? 'cyan' : 'white' })}
                             >
                                 Ejemplos
                             </NavLink>
