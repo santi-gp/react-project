@@ -16,7 +16,7 @@ const Factorial = () => {
         setN(e.target.value);
     }
     return (
-        <>
+        <div className='flex-row jc-center ai-center'>
             Factorial de 
             <input 
             style={{width: '4em', margin:'0 0.5em', paddingLeft:'0.5em'}}
@@ -25,7 +25,7 @@ const Factorial = () => {
                 min='0'
                 onChange={handleChange} />
             es: {factorial}
-        </>
+        </div>
     )
 }
 

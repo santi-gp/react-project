@@ -5,6 +5,8 @@ import Form from '../components/content/forms/Form'
 import Product from '../components/content/rating/Product'
 import GitUsers from '../components/content/restFulApi/GitUsers'
 import ChangeColour from '../components/content/hook_useEffect/ChangeColour'
+import FormValidate from '../components/content/forms/FormValidate'
+import PostMain from '../components/content/posts/PostMain'
 
 // Acordeon Forularios
 export function ReactForm() {
@@ -31,6 +33,14 @@ export function HookForm() {
   )
 }
 
+export function ValidateForm() {
+  return (
+    <article>
+      <FormValidate />
+    </article>
+  )
+}
+
 //Acordeon API RESTful
 export function GitHubUsers() {
   return (
@@ -52,6 +62,13 @@ export function ShowColor() {
   return (
     <article>
       <ChangeColour />
+    </article>
+  )
+}
+export function PostBlog() {
+  return (
+    <article>
+      <PostMain />
     </article>
   )
 }

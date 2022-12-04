@@ -1,25 +1,25 @@
 import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { deleteUser, getUser } from './users';
+import { deleteMovie, getMovie } from './listMovies';
 
 function User() {
     const navigate = useNavigate();
     const params = useParams();
-    const user = getUser(params.userId);
+    const movie = getMovie(params.movieId);
     //const user = getUser(parseInt(params.userId));
     const handleDelete = () => {
-        deleteUser(user.id);
+        deleteMovie(movie.id);
         navigate("/examples")
     }
-    if (!user) {
+    if (!movie) {
         return <div>No existe película</div>;
     }
     return (
         <>
-            <h4 className='my-1'>{user.titulo}</h4>
-            <h5 className='my-1'>{user.director}</h5>
-            <img style={{ width: '30%' }} src={user.imagen} alt={user.titulo} />
-            <p className='my-1'>{user.sinopsis}</p>
+            <h4 className='my-1'>{movie.titulo}</h4>
+            <h5 className='my-1'>{movie.director}</h5>
+            <img style={{ width: '30%' }} src={movie.imagen} alt={movie.titulo} />
+            <p className='my-1'>{movie.sinopsis}</p>
             <button
                 onClick={handleDelete}
                 className='bgc-red color-white border-r5 my-1'>

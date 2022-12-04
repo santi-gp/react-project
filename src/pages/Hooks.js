@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import AccordionMenu from '../components/sidebars/AccordionMenu'
-import dataMenu from '../components/sidebars/sidebarHooks'
+import dataHooks from '../components/sidebars/sidebarHooks'
 
 function Hooks() {
   return (
@@ -10,7 +10,7 @@ function Hooks() {
         <Outlet />
       </section>
       <aside>
-        <AccordionMenu dataArray={dataMenu} />
+        <AccordionMenu dataArray={dataHooks} />
       </aside>
     </>
   )

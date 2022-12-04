@@ -1,8 +1,8 @@
 import React from 'react'
 import { Outlet, Link } from 'react-router-dom';
-import { getAllUsers } from './users'
+import { getAllMovies } from './listMovies'
 function Movies() {
-    const users = getAllUsers();
+    const movies = getAllMovies();
     const styleGrid = {
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
@@ -19,12 +19,12 @@ function Movies() {
                 <div>
                     <h2>Películas</h2>
                     <ul>
-                        {users.map((user) => (
-                            <li key={user.id} style={styleGrid.styleLi}>
+                        {movies.map((movie) => (
+                            <li key={movie.id} style={styleGrid.styleLi}>
                                 <Link
-                                    to={user.id.toString()}
+                                    to={movie.id.toString()}
                                     style={styleGrid.styleA}>
-                                    {user.titulo}
+                                    {movie.titulo}
                                 </Link>
                             </li>
                         ))}

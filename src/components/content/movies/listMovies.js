@@ -1,4 +1,4 @@
-let users = [
+let listMovies = [
 
     {
         "anio": 2001,
@@ -335,63 +335,63 @@ let users = [
         "sinopsis": "Doc vuelve a aparecer con una máquina del tiempo mucho más modernizada y le pide a Marty y a su novia que le acompañen al futuro. En el Hill Valley de 2015 deberán solucionar un problema con la ley que tendrá uno de los futuros hijos de Marty y Jenny.",
         "titulo": "Volver al Futuro II"
     },
-    {
-        "anio": 2014,
-        "comentarios": [],
-        "director": "Christopher Nolan",
-        "genero": [
-            "Aventura",
-            "Drama",
-            "Ciencia Ficción",
-            "Misterio"
-        ],
-        "id": "aa034fc3-ea8e-4aab-9d3z-b117ca78c102",
-        "idUsuario": "c8c6cfd1-318c-4984-b38c-031ad76e3596",
-        "imagen": "https://m.media-amazon.com/images/I/716P1xCmnPL._AC_SL1020_.jpg",
-        "sinopsis": "Un grupo de científicos y exploradores, encabezados por Cooper, se embarcan en un viaje espacial para encontrar un lugar con las condiciones necesarias para reemplazar a la Tierra y comenzar una nueva vida allí.",
-        "titulo": "Interestelar"
-    },
-    {
-        "anio": 1995,
-        "comentarios": [],
-        "director": "Mel Gibson",
-        "genero": [
-            "Acción",
-            "Romance",
-            "Bélicas"
-        ],
-        "id": "xx034fc3-ea8e-4aab-9d3z-b117ca78c102",
-        "idUsuario": "c8c6cfd1-318c-4984-b38c-031ad76e3596",
-        "imagen": "https://m.media-amazon.com/images/I/71B1fLQaePL._AC_SL1018_.jpg",
-        "sinopsis": "Las épicas aventuras de William Wallace, un rebelde escocés en su lucha por la independencia contra el poder de Inglaterra, en pleno medievo. Su legendario carácter y su épica historia de amor lo convirtieron en un héroe.",
-        "titulo": "Corazon Valiente"
-    },
-    {
-        "anio": 1994,
-        "comentarios": [],
-        "director": "Robert Zemeckis",
-        "genero": [
-            "Comedia",
-            "Romance",
-            "Drama"
-        ],
-        "id": "hz034fc3-ea8e-4aab-9d3z-b117ca78c102",
-        "idUsuario": "c8c6cfd1-318c-4984-b38c-031ad76e3596",
-        "imagen": "https://m.media-amazon.com/images/I/81J1rycHoeL._SL1500_.jpg",
-        "sinopsis": "Sentado en un banco en Savannah, Georgia, Forrest Gump espera al autobús. Mientras éste tarda en llegar, el joven cuenta su vida a las personas que se sientan a esperar con él. Aunque sufre un pequeño retraso mental, esto no le impide hacer cosas maravillosas.",
-        "titulo": "Forrest Gump"
-    }
+    // {
+    //     "anio": 2014,
+    //     "comentarios": [],
+    //     "director": "Christopher Nolan",
+    //     "genero": [
+    //         "Aventura",
+    //         "Drama",
+    //         "Ciencia Ficción",
+    //         "Misterio"
+    //     ],
+    //     "id": "aa034fc3-ea8e-4aab-9d3z-b117ca78c102",
+    //     "idUsuario": "c8c6cfd1-318c-4984-b38c-031ad76e3596",
+    //     "imagen": "https://m.media-amazon.com/images/I/716P1xCmnPL._AC_SL1020_.jpg",
+    //     "sinopsis": "Un grupo de científicos y exploradores, encabezados por Cooper, se embarcan en un viaje espacial para encontrar un lugar con las condiciones necesarias para reemplazar a la Tierra y comenzar una nueva vida allí.",
+    //     "titulo": "Interestelar"
+    // },
+    // {
+    //     "anio": 1995,
+    //     "comentarios": [],
+    //     "director": "Mel Gibson",
+    //     "genero": [
+    //         "Acción",
+    //         "Romance",
+    //         "Bélicas"
+    //     ],
+    //     "id": "xx034fc3-ea8e-4aab-9d3z-b117ca78c102",
+    //     "idUsuario": "c8c6cfd1-318c-4984-b38c-031ad76e3596",
+    //     "imagen": "https://m.media-amazon.com/images/I/71B1fLQaePL._AC_SL1018_.jpg",
+    //     "sinopsis": "Las épicas aventuras de William Wallace, un rebelde escocés en su lucha por la independencia contra el poder de Inglaterra, en pleno medievo. Su legendario carácter y su épica historia de amor lo convirtieron en un héroe.",
+    //     "titulo": "Corazon Valiente"
+    // },
+    // {
+    //     "anio": 1994,
+    //     "comentarios": [],
+    //     "director": "Robert Zemeckis",
+    //     "genero": [
+    //         "Comedia",
+    //         "Romance",
+    //         "Drama"
+    //     ],
+    //     "id": "hz034fc3-ea8e-4aab-9d3z-b117ca78c102",
+    //     "idUsuario": "c8c6cfd1-318c-4984-b38c-031ad76e3596",
+    //     "imagen": "https://m.media-amazon.com/images/I/81J1rycHoeL._SL1500_.jpg",
+    //     "sinopsis": "Sentado en un banco en Savannah, Georgia, Forrest Gump espera al autobús. Mientras éste tarda en llegar, el joven cuenta su vida a las personas que se sientan a esperar con él. Aunque sufre un pequeño retraso mental, esto no le impide hacer cosas maravillosas.",
+    //     "titulo": "Forrest Gump"
+    // }
 ];
 
 
-export function getAllUsers() {
-    return users;
+export function getAllMovies() {
+    return listMovies;
 }
 
-export function getUser(id) {
-    return users.find((user) => user.id === id);
+export function getMovie(id) {
+    return listMovies.find((movie) => movie.id === id);
 }
 
-export function deleteUser(id) {
-    users = users.filter((user) => user.id !== id);
+export function deleteMovie(id) {
+    listMovies = listMovies.filter((movie) => movie.id !== id);
 }

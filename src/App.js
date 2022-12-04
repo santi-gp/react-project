@@ -10,13 +10,14 @@ import {
   ReactFormik,
   Rating,
   GitHubUsers,
-  ShowColor
+  ShowColor,
+  ValidateForm,
+  PostBlog
 }
   from './pages/hooksPages';
-import User from './components/content/movies/User';
+import Movie from './components/content/movies/Movie';
 import { Crud } from './components/content/crud/Crud';
 import Movies from './components/content/movies/Movies';
-import PostMain from './components/content/posts/PostMain';
 import { Calculators, Numerical } from './pages/examplesPages';
 
 function App() {
@@ -30,13 +31,14 @@ function App() {
             <Route index element={
               <article>
                 <Crud />
-                <PostMain />
               </article>
             } />
             <Route path='reactForm' element={<ReactForm />} />
             <Route path='reactFormik' element={<ReactFormik />} />
             <Route path='hookForm' element={<HookForm />} />
+            <Route path='validateForm' element={<ValidateForm />} />
             <Route path='githubUsers' element={<GitHubUsers />} />
+            <Route path='postBlog' element={<PostBlog />} />
             <Route path='rating' element={<Rating />} />
             <Route path='changeColour' element={<ShowColor />} />
           </Route>
@@ -46,9 +48,9 @@ function App() {
                 <Movies />
               </article>
             } />
+            <Route path=":movieId" element={<Movie />} />
             <Route path='calculators' element={<Calculators />} />
             <Route path='interLagrange' element={<Numerical />} />
-            <Route path=":userId" element={<User />} />
           </Route>
         </Route>
       </Routes>
